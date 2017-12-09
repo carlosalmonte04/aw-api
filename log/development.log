@@ -1,0 +1,240 @@
+Started GET "/" for 127.0.0.1 at 2017-12-09 10:56:02 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/CarlosAlmonte/.rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CarlosAlmonte/.rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (7.5ms)
+Completed 200 OK in 826ms (Views: 18.1ms)
+
+
+Started GET "/api/v1/csv_parser" for 127.0.0.1 at 2017-12-09 11:02:17 -0500
+  
+SyntaxError (/Users/CarlosAlmonte/Desktop/APPS/rails-projects/aw-api/config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+      get 'csv_parser' to: 'csv_parsers#index',
+                         ^
+/Users/CarlosAlmonte/Desktop/APPS/rails-projects/aw-api/config/routes.rb:5: syntax error, unexpected ',', expecting keyword_end
+/Users/CarlosAlmonte/Desktop/APPS/rails-projects/aw-api/config/routes.rb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+      post 'csv_parser' to: 'csv_parsers#create',
+                          ^
+/Users/CarlosAlmonte/Desktop/APPS/rails-projects/aw-api/config/routes.rb:6: syntax error, unexpected ',', expecting keyword_end):
+  
+config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:5: syntax error, unexpected ',', expecting keyword_end
+config/routes.rb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:6: syntax error, unexpected ',', expecting keyword_end
+Started GET "/api/v1/csv_parsers" for 127.0.0.1 at 2017-12-09 11:02:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/csv_parsers"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/csv_parsers" for 127.0.0.1 at 2017-12-09 11:03:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/csv_parsers"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/csv_parser" for 127.0.0.1 at 2017-12-09 11:03:25 -0500
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/csv_parser" for 127.0.0.1 at 2017-12-09 11:05:18 -0500
+Processing by Api::V1::CsvParsersController#index as HTML
+Completed 500 Internal Server Error in 14608ms
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `index'
+app/controllers/api/v1/csv_parsers_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2017-12-09 11:05:49 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/CarlosAlmonte/.rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CarlosAlmonte/.rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (7.0ms)
+Completed 200 OK in 31ms (Views: 22.1ms)
+
+
+Started OPTIONS "/api/v1/csv_parser/" for 127.0.0.1 at 2017-12-09 11:07:37 -0500
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/csv_parser"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/csv_parser/" for 127.0.0.1 at 2017-12-09 11:09:38 -0500
+Processing by Api::V1::CsvParsersController#create as JSON
+  Parameters: {"name"=>"companies (1).csv", "csv_parser"=>{"name"=>"companies (1).csv"}}
+Completed 204 No Content in 217963ms
+
+
+Started POST "/api/v1/csv_parser/" for 127.0.0.1 at 2017-12-09 11:14:33 -0500
+Processing by Api::V1::CsvParsersController#create as JSON
+  Parameters: {"name"=>"companies (1).csv", "csv_parser"=>{"name"=>"companies (1).csv"}}
+Completed 200 OK in 3307ms (Views: 0.6ms)
+
+
+Started POST "/api/v1/csv_parser/" for 127.0.0.1 at 2017-12-09 11:14:42 -0500
+Processing by Api::V1::CsvParsersController#create as JSON
+  Parameters: {"name"=>"companies (1).csv", "csv_parser"=>{"name"=>"companies (1).csv"}}
+Completed 200 OK in 51462ms (Views: 0.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateReports (20171209161704)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "type" varchar, "data" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171209161704"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-09 16:17:53.448461"], ["updated_at", "2017-12-09 16:17:53.448461"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/v1/csv_parser/" for 127.0.0.1 at 2017-12-09 11:19:22 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CsvParsersController#create as JSON
+  Parameters: {"name"=>"companies (1).csv", "csv_parser"=>{"name"=>"companies (1).csv"}}
+Completed 200 OK in 363608ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/csv_parser/" for 127.0.0.1 at 2017-12-09 11:27:34 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CsvParsersController#create as JSON
+  Parameters: {"name"=>"companies (1).csv", "file"=>"company_id,fractal_index\r\n1,0.678\r\n2,0.782\r\n3,0.795\r\n4,0.724\r\n5,0.523", "csv_parser"=>{"name"=>"companies (1).csv", "file"=>"company_id,fractal_index\r\n1,0.678\r\n2,0.782\r\n3,0.795\r\n4,0.724\r\n5,0.523"}}
+Unpermitted parameter: :file
+Unpermitted parameter: :file
+Completed 200 OK in 70305ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/csv_parser/" for 127.0.0.1 at 2017-12-09 11:28:51 -0500
+Processing by Api::V1::CsvParsersController#create as JSON
+  Parameters: {"name"=>"companies (1).csv", "data"=>"company_id,fractal_index\r\n1,0.678\r\n2,0.782\r\n3,0.795\r\n4,0.724\r\n5,0.523", "csv_parser"=>{"name"=>"companies (1).csv", "data"=>"company_id,fractal_index\r\n1,0.678\r\n2,0.782\r\n3,0.795\r\n4,0.724\r\n5,0.523"}}
+Completed 200 OK in 320163ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/csv_parser/" for 127.0.0.1 at 2017-12-09 11:35:53 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CsvParsersController#create as JSON
+  Parameters: {"name"=>"companies (1).csv", "data"=>"company_id,fractal_index\r\n1,0.678\r\n2,0.782\r\n3,0.795\r\n4,0.724\r\n5,0.523", "csv_parser"=>{"name"=>"companies (1).csv", "data"=>"company_id,fractal_index\r\n1,0.678\r\n2,0.782\r\n3,0.795\r\n4,0.724\r\n5,0.523"}}
+Completed 500 Internal Server Error in 10567ms (ActiveRecord: 0.0ms)
+
+
+  
+PDFKit::NoExecutableError (No wkhtmltopdf executable found at 
+>> Please install wkhtmltopdf - https://github.com/pdfkit/PDFKit/wiki/Installing-WKHTMLTOPDF):
+  
+app/controllers/api/v1/csv_parsers_controller.rb:9:in `new'
+app/controllers/api/v1/csv_parsers_controller.rb:9:in `create'
+Started POST "/api/v1/csv_parser/" for 127.0.0.1 at 2017-12-09 11:37:24 -0500
+Processing by Api::V1::CsvParsersController#create as JSON
+  Parameters: {"name"=>"companies (1).csv", "data"=>"company_id,fractal_index\r\n1,0.678\r\n2,0.782\r\n3,0.795\r\n4,0.724\r\n5,0.523", "csv_parser"=>{"name"=>"companies (1).csv", "data"=>"company_id,fractal_index\r\n1,0.678\r\n2,0.782\r\n3,0.795\r\n4,0.724\r\n5,0.523"}}
+Completed 500 Internal Server Error in 1144ms (ActiveRecord: 0.0ms)
+
+
+  
+PDFKit::NoExecutableError (No wkhtmltopdf executable found at 
+>> Please install wkhtmltopdf - https://github.com/pdfkit/PDFKit/wiki/Installing-WKHTMLTOPDF):
+  
+app/controllers/api/v1/csv_parsers_controller.rb:9:in `new'
+app/controllers/api/v1/csv_parsers_controller.rb:9:in `create'
