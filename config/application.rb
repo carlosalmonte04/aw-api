@@ -20,6 +20,13 @@ module AwApi
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
+    PDFKit.configure do |config|
+        config.default_options = {
+            page_size: 'A4',
+            print_media_type: true,
+            dpi: 400
+        }
+    end
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

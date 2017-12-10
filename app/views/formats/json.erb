@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/Users/CarlosAlmonte/Desktop/APPS/rails-projects/aw-api/app/assets/stylesheets/app.css">
+    <link rel="stylesheet" href="<%=Rails.root%>/app/assets/stylesheets/app.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-container">
+      </div>
+    </header>
+    <section class="title-container">
+      <h1>Parsed JSON</h1>
+      <div class="line"></div>
+      <h4>generated at 12:12pm</h4>
+    </section>
+    <section class="content hash">
+      <div>&nbsp;{</div>
+      <% rows.each_with_index do |row, i| %>
+
+        <% if i == 0 %>
+          <% next %>
+        <% end %>
+        <div class="pk">&nbsp;&nbsp;"<%= row.split(",")[pk_index] %>"<span style="font-weight: 500">: {</span></div>
+            <% row.split(",").each_with_index do |cell, j|%>
+              <% if j != pk_index %>
+                <div class="key">&nbsp;&nbsp;&nbsp;&nbsp;"<%= headers[j] %>": <span>"<%= cell %>"</span><%= j === headers.length - 1 ? '' : ',' %></div>
+              <% end %> 
+            <% end %>
+
+        <div>&nbsp;&nbsp;}<%= i == rows.length - 1 ? '' : ',' %></div>
+
+      <% end %>
+      <div>&nbsp;}</div>
+    </section>
+  </body>
+</html>
