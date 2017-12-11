@@ -1,33 +1,21 @@
 class Api::V1::CsvParsersController < ApplicationController
 
   def create
-    selected_format = csv_params[:selected_format]
-    rows       = csv_params[:file_to_parse].split("\r\n")
-    headers    = rows[0].split(",")
-    pk         = csv_params[:pk]
-    pk_index   = headers.index(pk || headers[0])
+    @selected_format = csv_params[:selected_format]
+    @rows       = csv_params[:file_to_parse].split("\r\n")
+    @headers    = @rows[0].split(",")
+    @pk         = csv_params[:pk]
+    @pk_index   = @headers.index(@pk || @headers[0])
 
-
-    if selected_format == 'raw_json'
-      final_json = {}
-      rows.each_with_index do |row, i|
-        row_cells = row.split(",")
-        next if i == 0
-        
-        final_json[row_cells[pk_index]] = {}
-
-        row_cells.each_with_index do |cell, j|
-          final_json[row_cells[pk_index]][headers[j]] = cell 
-        end
-      end
-      render :json => final_json.to_json
+    if @selected_format == 'raw_json'
+      render :json => csv_to_json
       return 
     end
 
     ac = ActionController::Base.new()
     html = ac.render_to_string(
-      :template => "formats/#{selected_format}", 
-      :locals => {rows: rows, pk_index: pk_index, headers: headers}
+      :template => "formats/#{@selected_format}", 
+      :locals => {rows: @rows, pk_index: @pk_index, headers: @headers}
     )
 
     kit = PDFKit.new(html, 
@@ -44,6 +32,22 @@ class Api::V1::CsvParsersController < ApplicationController
 
   def csv_params
     params.require(:csv_parser).permit(:file_to_parse, :selected_format)
+  end
+
+  def csv_to_json
+    final_json = {}
+    @rows.each_with_index do |row, i|
+      row_cells = row.split(",")
+      next if i == 0
+      
+      final_json[row_cells[@pk_index]] = {}
+
+      row_cells.each_with_index do |cell, j|
+        final_json[row_cells[@pk_index]][@headers[j]] = cell 
+      end
+
+    end
+    final_json.to_json
   end
 
 end
