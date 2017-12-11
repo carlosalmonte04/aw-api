@@ -14,7 +14,7 @@
     <section class="title-container">
       <h1>Parsed Report</h1>
       <div class="line"></div>
-      <h4>generated at 12:12pm</h4>
+      <h4>generated at <%= Time.now.strftime("%I:%M%P")  %></h4>
     </section>
     <section class="content table">
       <table>
